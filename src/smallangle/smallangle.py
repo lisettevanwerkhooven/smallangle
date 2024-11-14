@@ -15,7 +15,7 @@ def group():
     default = 10 
 )
 def sin(number):
-    """Give the sinus of NUMBER amount of steps between 0 and 2pi.
+    """Calculate the sinus of NUMBER amount of steps between 0 and 2pi.
 
     NUMBER is the amount of steps between 0 and 2pi.
     """
@@ -30,7 +30,7 @@ def sin(number):
     default =- 10
 )
 def tan(number):
-    """Give the tangens of NUMBER amount of steps between 0 and 2pi.
+    """Calculate the tangens of NUMBER amount of steps between 0 and 2pi.
 
     NUMBER is the amount of steps between 0 and 2pi.
     """
@@ -40,4 +40,4 @@ def tan(number):
 
 
 if __name__ == "__main__":
-    sin(10)
+    group()
