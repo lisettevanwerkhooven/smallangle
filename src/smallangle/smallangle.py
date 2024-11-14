@@ -3,6 +3,7 @@ import numpy as np
 from numpy import pi
 import pandas as pd
 
+# create a group. command 'smallangle' is linked to this function
 @click.group()
 def group():
     pass
@@ -14,6 +15,10 @@ def group():
     default = 10 
 )
 def sin(number):
+    """Give the sinus of NUMBER amount of steps between 0 and 2pi.
+
+    NUMBER is the amount of steps between 0 and 2pi.
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -25,6 +30,10 @@ def sin(number):
     default =- 10
 )
 def tan(number):
+    """Give the tangens of NUMBER amount of steps between 0 and 2pi.
+
+    NUMBER is the amount of steps between 0 and 2pi.
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
